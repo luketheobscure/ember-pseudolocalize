@@ -5,6 +5,10 @@ module.exports = function configureEnvironment(environment) {
     i18n: {
       defaultLocale: 'en-US',
     },
+    'ember-pseudolocalize': {
+      prepend: '!~~',
+      append: '~~!',
+    },
     modulePrefix: 'dummy',
     environment,
     rootURL: '/',

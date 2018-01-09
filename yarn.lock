@@ -4655,9 +4655,9 @@ proxy-addr@~2.0.2:
     forwarded "~0.1.2"
     ipaddr.js "1.5.2"
 
-pseudoloc@^1.1.0:
+"pseudoloc@https://github.com/bunkat/pseudoloc.git#d0d3730927931ba3bdb7b1a07551fede3b9b2141":
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/pseudoloc/-/pseudoloc-1.1.0.tgz#9082eecad8d2e64a8d0ed44138f1aef8e1758b52"
+  resolved "https://github.com/bunkat/pseudoloc.git#d0d3730927931ba3bdb7b1a07551fede3b9b2141"
   dependencies:
     commander "*"
 

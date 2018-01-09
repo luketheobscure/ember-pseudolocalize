@@ -23,7 +23,7 @@
     "ember-i18n": "^5.1.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "pseudoloc": "^1.1.0"
+    "pseudoloc": "https://github.com/bunkat/pseudoloc.git#d0d3730927931ba3bdb7b1a07551fede3b9b2141"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

@@ -1,25 +1,16 @@
-import pseudoloc from 'pseudoloc';
 import Locale from 'ember-i18n/utils/locale';
-
-pseudoloc.option.startDelimiter = '{{';
-pseudoloc.option.endDelimiter = '}}';
-
-function pseudolocObject(obj) {
-  const localized = { ...obj };
-
-  Object.entries(localized).forEach(([key, value]) => {
-    localized[key] = typeof value === 'string' ? pseudoloc.str(value) : pseudolocObject(localized[key]);
-  });
-
-  return localized;
-}
+import configurePseudoloc from '../utils/configure-pseudoloc';
+import pseudolocalizeObject from '../utils/pseudolocalize-object';
 
 export function initialize(appInstance) {
   const i18nService = appInstance.lookup('service:i18n');
+  const appConfig = appInstance.resolveRegistration('config:environment');
+
+  configurePseudoloc(appConfig['ember-pseudolocalize']);
 
   const { translations } = new Locale('en-us', appInstance);
 
-  i18nService.addTranslations('en-xa', pseudolocObject(translations));
+  i18nService.addTranslations('en-xa', pseudolocalizeObject(translations));
 }
 
 export default {
