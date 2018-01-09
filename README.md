@@ -1,5 +1,10 @@
 **This is still alpha software! Probably not ready for prime time.**
 
+[![Build Status](https://travis-ci.org/luketheobscure/ember-pseudolocalize.svg?branch=master)](https://travis-ci.org/luketheobscure/ember-pseudolocalize)
+[![Code Climate](https://codeclimate.com/github/luketheobscure/ember-pseudolocalize/badges/gpa.svg)](https://codeclimate.com/github/luketheobscure/ember-pseudolocalize)
+[![dependencies](https://david-dm.org/luketheobscure/ember-pseudolocalize.svg)](https://david-dm.org/luketheobscure/ember-pseudolocalize)
+
+
 # Ember-pseudolocalize
 
 Ember-pseudolocalize is a tiny addon that helps you ensure that your app is fully localized. Designed to work with [ember-i18n](https://github.com/jamesarosen/ember-i18n).
@@ -9,7 +14,7 @@ Ember-pseudolocalize is a tiny addon that helps you ensure that your app is full
 Ember-pseudolocalize should work with any verion of Ember 2.x (tested with 2.8 and beyond), and ember-i18n 5.x. Install with:
 
     ember install ember-pseudolocalize
-    
+
 ## Pseudolocaliwhat now?
 
 [Pseudolocalization](https://en.wikipedia.org/wiki/Pseudolocalization) is the process of replacing characters in a string with accented versions, but in a way that it's still legible. Śōmȇŧĥĩňĝ ĺĩƙȇ ŧĥĩś, so that you can easily identify untranslated strings. It's often used in conjunction with techniques that lengthen strings to help spot UI/UX issues (non-English strings are often [more than 30% longer](https://www.w3.org/International/articles/article-text-size)).
@@ -25,7 +30,7 @@ Customize how the strings are pseudolocalized by editing your ember-cli-build an
 
 #### Prepend, Append
 
-Specifies the strings that should surround the pseudolocalized strings. The prepended and appended strings help to locate strings that have been cut off or improperly concatenated together - localized strings should use tokens for data since different languages have different word orders. 
+Specifies the strings that should surround the pseudolocalized strings. The prepended and appended strings help to locate strings that have been cut off or improperly concatenated together - localized strings should use tokens for data since different languages have different word orders.
 
 Default is `[!!` and `!!]`.
 
