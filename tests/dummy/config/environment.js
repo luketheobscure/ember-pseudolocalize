@@ -3,6 +3,9 @@
 
 module.exports = function(environment) {
   let ENV = {
+    i18n: {
+      defaultLocale: 'en-US'
+    },
     modulePrefix: 'dummy',
     environment,
     rootURL: '/',
