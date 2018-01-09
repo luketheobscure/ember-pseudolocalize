@@ -1,13 +1,17 @@
 module.exports = {
   root: true,
+  plugins: [
+    'ember'
+  ],
   parserOptions: {
-    ecmaVersion: 2017,
-    sourceType: 'module'
+    ecmaVersion: 2017
   },
-  extends: 'eslint:recommended',
-  env: {
-    browser: true
-  },
+  extends: [
+    'airbnb-base',
+    'plugin:ember/recommended'
+  ],
   rules: {
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
   }
-};
+}

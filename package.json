@@ -21,6 +21,8 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "ember-cli-babel": "^6.6.0",
     "ember-i18n": "^5.1.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "pseudoloc": "^1.1.0"
   },
   "devDependencies": {
@@ -42,6 +44,7 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.16.0",
+    "eslint-plugin-ember": "^5.0.3",
     "express": "^4.16.2",
     "glob": "^4.5.3",
     "loader.js": "^4.2.3",

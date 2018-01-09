@@ -1,11 +1,10 @@
 /* eslint-env node */
-'use strict';
+const express = require('express');
 
-module.exports = function(app) {
-  const express = require('express');
-  let detectLocaleRouter = express.Router();
+module.exports = function mockRouter(app) {
+  const detectLocaleRouter = express.Router();
 
-  detectLocaleRouter.get('/', function(req, res) {
+  detectLocaleRouter.get('/', (req, res) => {
     res.send(req.headers['accept-language'].split(',')[0]);
   });
 
