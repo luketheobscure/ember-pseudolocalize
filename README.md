@@ -1,5 +1,3 @@
-**This is still alpha software! Probably not ready for prime time.**
-
 [![Build Status](https://travis-ci.org/luketheobscure/ember-pseudolocalize.svg?branch=master)](https://travis-ci.org/luketheobscure/ember-pseudolocalize)
 [![Code Climate](https://codeclimate.com/github/luketheobscure/ember-pseudolocalize/badges/gpa.svg)](https://codeclimate.com/github/luketheobscure/ember-pseudolocalize)
 [![dependencies](https://david-dm.org/luketheobscure/ember-pseudolocalize.svg)](https://david-dm.org/luketheobscure/ember-pseudolocalize)
